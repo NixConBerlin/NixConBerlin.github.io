@@ -1,0 +1,10 @@
+@media (max-width: 650px) {
+    ._flex {
+	flex-wrap: wrap;
+    }
+
+    .navList > li {
+	font-size: 14px;
+	font-weight: bold;
+    }
+}
