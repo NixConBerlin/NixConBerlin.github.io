@@ -57,6 +57,7 @@ a.important {
   display: inline-block;
 }
 
+#heading a:after,
 a.important:after {
   content: "";
   display: block;
@@ -72,6 +73,7 @@ a.important:after {
   transition-duration: 0.2s;
 }
 
+#heading a:hover:after,
 a.important:hover:after {
   margin-left: 0;
   margin-right: 0;
