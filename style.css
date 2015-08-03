@@ -47,12 +47,37 @@ a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-a.important {
-  font-size: 1.5em;
-}
+
 a:hover {
   color: #3F3FBF;
 }
+
+a.important {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+a.important:after {
+  content: "";
+  display: block;
+  margin: 8px 8px 0 8px;
+  border-top: 1px solid #7D7DFC;
+ -moz-transition-property: all;
+ -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+ -moz-transition-duration: 0.2s;
+ -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+a.important:hover:after {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom-color: #3F3FBF;
+}
+
 
 #heading {
   position: relative;
@@ -92,27 +117,6 @@ a:hover {
   float: right;
   margin-top: 1em;
   margin-right: 2em;
-}
-
-#heading a:after {
-  content: "";
-  display: block;
-  margin: 8px 8px 0 8px;
-  border-bottom: 1px solid #7D7DFC;
- -moz-transition-property: all;
- -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
- -moz-transition-duration: 0.2s;
- -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-
-#heading a:hover:after {
-  margin-left: 0;
-  margin-right: 0;
-  border-bottom-color: #3F3FBF;
 }
 
 #heading h1,
