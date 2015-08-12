@@ -188,6 +188,38 @@ footer li {
   margin: 0 0.5em;
 }
 
+.indent {
+  margin-left: 1.5em;
+}
+
+.sponsorships {
+  border: 1px solid black;
+  margin-left: 1.5em;
+  width: 60%;
+  padding-left: 1.5em;
+  padding-right 1.5em;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.sponsorships thead, .sponsorships .level {
+  font-weight: bold;
+}
+
+.sponsorships .level {
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.sponsorships .quantity {
+  text-align: center;
+}
+
+.sponsorships td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   margin: 0 1em;
@@ -200,5 +232,5 @@ footer li {
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 }
