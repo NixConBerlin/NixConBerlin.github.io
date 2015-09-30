@@ -111,6 +111,14 @@ a.important:hover:after {
   display: inline-block;
 }
 
+#heading .details a {
+  font-size: 1em;
+  font-weight: 600;
+}
+#heading .details a:after {
+  display: none;
+}
+
 #heading > a {
   margin: 3em 0 4em 0;
 }
