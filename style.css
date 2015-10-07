@@ -31,6 +31,16 @@ section h2:after {
   border-bottom: 1px solid #E7E9EA;
 }
 
+section h3 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #3A3A47;
+  text-transform: uppercase;
+}
+
 section div.text {
   text-align: left;
 }
@@ -200,6 +210,40 @@ footer li {
   margin-left: 1.5em;
 }
 
+#schedule > div > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#schedule > div > ul > li span {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#schedule > div > ul > li > div {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  background: #2D3038;
+  color: #FFF;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+#schedule > div > ul > li span:first-child {
+  font-weight: bold;
+  width: 15%;
+  min-width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
 #sponsorships {
   border: 1px solid black;
   margin-left: 1.5em;
@@ -210,20 +254,21 @@ footer li {
   text-align: center;
 }
 
-.sponsorships thead, .sponsorships .level {
+#sponsorships thead,
+#sponsorships .level {
   font-weight: bold;
 }
 
-.sponsorships .level {
+#sponsorships .level {
   text-align: left;
   padding-left: 1.5em;
 }
 
-.sponsorships .quantity {
+#sponsorships .quantity {
   text-align: center;
 }
 
-.sponsorships td {
+#sponsorships td {
   border: 1px solid black;
   padding: 6px;
 }
