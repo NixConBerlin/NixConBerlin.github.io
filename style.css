@@ -273,6 +273,13 @@ footer li {
   padding: 6px;
 }
 
+#sponsors > div img {
+  vertical-align: middle;
+}
+#sponsors > div a {
+  margin: 0 1em;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   margin: 0 1em;
