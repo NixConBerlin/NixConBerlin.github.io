@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <meta name="title" content="NixCon 2015 Berlin" />
+  <meta name="title" content="NixCon 2016 Saint Petersburg" />
   <meta name="copyright" content="Public domain" />
 
-  <title>NixCon 2015 Berlin</title>
+  <title>NixCon 2016 Saint Petersburg</title>
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -45,470 +45,47 @@
       <a href="#schedule">Schedule</a>
     </header>
     <h1>NixCon</h1>
-    <h2>2015</h2>
+    <h2>2016</h2>
     <p>A NixOS Conference.</p>
     <div class="details">
-      <span>November 14th&ndash;15th</span>
-      <span><a href="http://www.ahoyberlin.com/contact/">Ahoy!Berlin</a> &middot; <a href="http://osm.org/go/0MbFY8dGE-?m=&node=3034708049">Wattstrasse 11 &middot; 13355 Berlin &middot; Germany</a></span>
+      <span>October XXth&ndash;XXth</span>
+      <span><a href="https://en.wikipedia.org/wiki/ITMO_University">ITMO University</a> &middot; <a href="https://goo.gl/maps/o7PbJ152eME2">пр. Кронверкский, 49, Санкт-Петербург &middot; 197101, Sankt-Peterburg &middot; Russia</a></span>
     </div>
   </section>
 
-	<section id="videos">
-		<h2>Video recordings</h2>
+	<!--section id="videos">
+	  <h2>Video recordings</h2>
     <div style="text-align: center">
-    <a href="https://www.youtube.com/playlist?list=PL_IxoDz1Nq2Y7mIxMZ28mVtjRbbnlVdmy">
+    <a href="LINK-TO_YOUTUBE_CHANNEL">
     <img style="width: 120px; " src="play-circle-o.svg">
     </a>
     </div>
-    <p>Thanks to the heroic efforts of the <a href="https://c3voc.de/">CCC Video Operation Center</a>, all talks are now available
-		on <a href="https://www.youtube.com/playlist?list=PL_IxoDz1Nq2Y7mIxMZ28mVtjRbbnlVdmy">YouTube</a>
-    and <a href="https://media.ccc.de/c/nixcon2015">media.ccc.de</a>.</p>
-	</section>
+	</section-->
 
-	<section id="schedule">
+	<!--section id="schedule">
 		<h2>Schedule</h2>
     <div>
-      <h3>Friday, 13. Nov 2015</h3>
+      <h3>Thursday, XX. Oct 2016</h3>
       <ul>
         <li>
           <span>From 20:00</span>
-          <span><div>Pre-conference drinks at <a href="http://trespassers.eu/">Trespassers</a></div></span>
+          <span><div>Pre-conference drinks at <a href="TODO">TODO</a></div></span>
         </li>
       </ul>
     </div>
-    <div>
-      <h3>Day 1 - Saturday, 14. Nov 2015</h3>
-      <ul>
-        <li>
-          <span>08:00 - 09:00</span>
-          <span>Registration / Breakfast</span>
-        </li>
-        <li>
-          <span>09:00 - 10:00</span>
-          <span><a href="#schedule-nix-roadmap">Nix Roadmap</a> by Eelco Dolstra</span>
-          <div id="schedule-nix-roadmap">
-
-            <p>
-              In this talk I'll discuss the state of the NixOS project and
-              future plans. These include things like:
-              <ul>
-
-                <li>Improved containerisation. In principle, the combination of
-                  Nix and Linux kernel namespaces / systemd provides a really
-                  powerful way to containerize services (including their
-                  state!), but we're not there yet.</li>
-
-                <li>Closure size reduction. Nix closures are rather fat at the
-                  moment, which is particularly annoying if you want to build
-                  light-weight containers. Nix's multiple output support has
-                  been around for a while to allow a huge size reduction, so
-                  it's time to start using it everywhere.</li>
-
-                <li>Distributed binary caches and reproducible builds. It would
-                  be fantastic if binaries could be produced in a distributed,
-                  P2P fashion, but this introduces an obvious trust problem. So
-                  you may only trust binaries that have signatures from
-                  multiple independent sources. But this requires bit-precise
-                  reproducibility.</li>
-
-                <li>Better Nixpkgs package abstractions. For instance, there
-                  currently is no discoverability for package options (unlike
-                  NixOS module options). So we need something better than the
-                  current mkDerivation/callPackage paradigm.</li>
-
-                <li>Policy issues. For instance, what packages / modules should
-                  be accepted in the repository?</li>
-
-                <li>How to deal with upstream packages that provide Nix
-                  expressions or NixOS modules.</li>
-
-                <li>And whatever else I can think of. Input is welcome! Please
-                  let me know if there are topics you would like to see
-                  discussed.</li>
-
-              </ul>
-            </p>
-          </div>
-        </li>
-        <li>
-          <span>10:15 - 11:00</span>
-          <span><a href="#schedule-python-packaging">The sorry state of Python packaging and how it reflects in Nix</a> by Domen Kozar</span>
-          <div id="schedule-python-packaging">
-
-            <p>Python packaging is one of the oldest packaging ecosystems. We
-            will look into how Python currently works in Nix, what are caveats
-            using the current state and what are short-term and long-term
-            possible solutions moving forward.</p>
-
-            <p>I will assume you have basic Nix language familiarity and build
-            on top of that.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>11:15 - 12:00</span>
-          <span><a href="#schedult-make-nix-friendlier-for-beginners">Make Nix friendlier for Beginners</a> by Rok Garbas</span>
-          <div id="schedule-make-nix-friendlier-for-beginners">
-
-            <p>Nix concepts and ideas are revolutionary. All of us who use
-            Nix/NixOS on daily basis understand how it works and why it works
-            this way. But it took us quite some time to get here.</p>
-
-            <p>Users just starting with Nix/NixOS are facing many problems,
-            which range from Documentation, UX of our command line tools,
-            Interacting with community, ... and many other areas.</p>
-
-            <p>I would like to share my views how we can make Nix/NixOS
-            friendlier to beginners without much effort.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>12:15 - 13:00</span>
-          <span><a href="#schedule-haskell-infrastructure">Inside of the Nixpkgs Haskell Infrastructure</a> by Peter Simons</span>
-          <div id="schedule-haskell-infrastructure">
-
-            <p>The Nixpkgs infrastructure for Haskell packages has evolved over
-            the course of several years, and the result of that process is
-            a fairly sophisticated machinery that few people understand in its
-            entirety. The purpose of this presentation is to take a look inside
-            of that infrastructure and to explore ...</p>
-
-            <ul>
-              <li>how Cabal files are converted to Nix build expressions,</li>
-              <li>how the "haskell-packages.nix" file is generated,</li>
-              <li>how configurations for different compiler versions are implemented,</li>
-              <li>how deep-overriding works in Haskell package sets, and</li>
-              <li>how the generic builder works and what options exist to tweak it.</li>  
-            </ul>
-
-            <p>For each of these topics, we'll discuss the current solution,
-            the motivation for the choices underlying that solution, and the
-            known issues and limitations. </p>
-
-            <p>The targeted audience are experienced Nix hackers with some
-            understanding of Haskell's Cabal build system. Beginners should be
-            able to follow most of the talk too, though, as we'll focus on
-            algorithms and structure rather that spending our time reading
-            code. Instead, the presentation is intended to enable its audience
-            to read (and modify!) the code themselves afterwards.</p>
-
-          </div>
-        </li>
-        <li style="margin-top: 15px">
-          <span>13:00 - 15:00</span>
-          <span>Lunch (provided)</span>
-        </li>
-        <li style="margin-top: 15px">
-          <span>15:15 - 16:00</span>
-          <span><a href="#schedule-nix-in-production">Nix in Production</a> by Oliver Charles</span>
-          <div id="schedule-nix-in-production">
-
-            <p>In this talk I'll discuss how we used Nix in production at
-            Fynder - a London-based startup building a simple booking system
-            for independent fitness instructors. We'll look at how Nix is used
-            to create development environments to write Haskell code, and how
-            these definitions can be re-used for production deployments and
-            continuous integration with Hydra. We'll also look at how NixOS and
-            NixOps are used to create deployment specifications.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>16:15 - 17:00</span>
-          <span><a href="#schedule-kubernetes-cluster">Kubernetes cluster on NixOS</a> by Jaka Hudoklin</span>
-          <div id="schedule-kubernetes-cluster">
-
-            <p>Ok, let's make this straight, for those who might think that
-            nixos is just a toy you eat for breakfast.  What about running
-            google kubernetes on a deticated cluster? full of nixos machines!
-            in production! with virtualized networking and distributed storage!
-            Ec2, you can just go to sleep!</p>
-
-          </div>
-        </li>
-        <li>
-          <span>17:15 - 18:00</span>
-          <span><a href="#schedule-disnix">Deploying (micro)services with Disnix</a> by Sander van der Burg</span>
-          <div id="schedule-disnix">
-
-            <p>In the Nix project, we strive to fully automate deployment
-            processes for many kinds of systems, such as individual packages
-            (Nix) and entire system configurations (NixOS) while providing
-            a number of important quality attributes such as declarative,
-            reliable and reproducible deployment.</p>
-
-            <p>Lately, the microservices paradigm gained a lot popularity and
-            it is also desired to automatically deploy such systems that are
-            composed of distributable units, which may have a number of
-            complicated technical and non-functional requirements.</p>
-
-            <p>Moreover, we also want to have the same or similar deployment
-            quality properties as the Nix package manager while deploying
-            them.</p>
-
-            <p>In this talk I'll show Disnix, a Nix-based service deployment
-            tool that can be used to automatically deploy service-oriented
-            systems into networks of machines and I will explain its underlying
-            concepts. </p>
-
-            <p>Additionally, I will show a number of public hands-on example
-            cases each covering a specific deployment objective/property (such
-            as heterogeneous network deployment, service compositions and
-            deployment planning) and a real-world deployment scenario combining
-            several of these aspects.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>18:15 - 19:00</span>
-          <span><a href="#schedule-ignite-talks1">Lightning / Ignite talks</a></span>
-          <div id="schedule-ignite-talks1">
-            <p>A lightning talk is a very short presentation lasting only a few
-            minutes, given at a conference or similar forum. Several lightning
-            talks will usually be delivered by different speakers in a single
-            session, sometimes called a data blitz.
-            <a href="https://en.wikipedia.org/wiki/Lightning_talk">More</a></p>
-          </div>
-        </li>
-        <li style="margin-top: 15px">
-          <span>After 19:00</span>
-          <span><a href="#bla">Dinner options</a></span>
-          <div id="bla">
-            <ul>
-              <li>
-Vietnam Village -- Vietnamese (Oderberger Str. 7)
-</li>
-
-              <li>
-                La Focacceria -- Pizza (Fehrbelliner Str. 24)
-              </li>
-
-              <li>
-                Konnopkes Imbiss -- Berlin fast food (Schönhauser Allee 44 b)
-              </li>
-
-              <li>
-                Prater Gaststätte - German food (Kastanienallee 7-9)
-              </li>
-
-              <li>
-                Yumcha Heroes - Chinese dumplings (Weinbergsweg 8)
-              </li>
-
-              </ul>
-
-          </div>
-        </li>
-        <li style="margin-top: 15px">
-          <span>From 20:30</span>
-          <span><a href="#sat-beers">Beers at Volksbar (Rosa-Luxemburg-Platz)</a></span>
-          <div id="sat-beers">
-            <p>On Saturday night we meet for beers at <b>Volksbar</b> on
-            Rosa-Luxemburg-Platz, opposite the Volksbühne theater. The bar is
-            easily reached from subway station Rosa-Luxemburg-Platz (U2) or
-              Rosenthaler Platz (U8)
-
-            <a href="https://www.google.de/maps/place/VOLKSBAR+-+Caf%C3%A9+Bar+Galerie/@52.526672,13.4086303,17z/data=!3m1!4b1!4m2!3m1!1s0x47a84e1de50a7859:0x2e53474c76b981b8?hl=de">(map)</a></p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h3>Day 2 - Sunday, 15. Nov 2015</h3>
-      <ul>
-        <li>
-          <span>08:00 - 09:15</span>
-          <span>Breakfast</span>
-        </li>
-        <li>
-          <span>09:15- 10:00</span>
-          <span><a href="#schedule-assembling-socs-with-nix">Assembling SOCs with Nix</a> by Jack Cummings</span>
-          <div id="schedule-assembling-socs-with-nix">
-
-            <p>The semiconductor industry is highly automated; building a SOC
-            is very similar to building a software package.</p>
-
-            <p>Except the build times are weeks instead of minutes.</p>
-
-            <p>
-              Nix has a feature set well suited for taming this flow:
-              <ul>
-                <li>manageability: derivations are first class data types, can be sub-typed </li>
-                <li>declarative: easy to reason and abstract</li>
-                <li>purity: reproducibility, binary caches</li>
-                <li>flexible: convert what is delivered into inputs that can be used</li>
-                <li>configuration: fine grained dependency management</li>
-                <li>speed: caching and sharing of precious build results</li>
-              </ul>
-            </p>
-
-            <p>
-              With nixcad, we use nix to develop, verify, and assemble a real
-              SoC:
-              <ul>
-                <li>30 different derivation types</li>
-                <li>start to finish ~300 steps</li>
-                <li>design of ~20 sub-blocks</li>
-                <li>verification of sub-blocks</li>
-                <li>integration of sub-blocks, external IP</li>
-                <li>logic synthesis, STA, power calculation, and static checks</li>
-                <li>final delivery closure sizes of 8GiB</li>
-              </ul>
-            </p>
-
-            <p>
-              Partitioning:
-              <ul>
-                <li>tools: a layer on top of nixpkgs for EDA tools.</li>
-                <li>cadenv: tool-agnostic drivers for simualtion, synthesis, FEC, STA, Place and Route, power calculation</li>
-                <li>ip: convert external IP into a usable state</li>
-                <li>metrics: extracting useful</li>
-                <li>project: pulling together all of the above</li>
-              </ul>
-            </p>
-
-          </div>
-        </li>
-        <li>
-          <span>10:15- 11:00</span>
-          <span><a href="#schedule-f-micro-services">Developing and deploying a F# MicroService on NixOS</a> by Karsten Gebbert</span>
-          <div id="schedule-f-micro-services">
-
-            <p>This talk/demo walks participants through the process of setting
-            up and deploying a small web service written in the FSharp
-            programming language. It is intended for novice to intermediate
-            NixOS and FSharp users and those interested alike.</p>
- 
-            <p>I will begin with a brief introduction to F# and some
-            fundamental concepts and ideas of the language. This will not go as
-            deep as explaining Mon ads in F#, but will provide some overview of
-            common idioms and styles.</p>
-
-            <p>Next, I will demonstrate how to set up a project using
-            a publicly available template and the build environment
-            (Emacs/evil, also the MonoDevelop IDE) and move on to live-coding
-            a small web service in F# using the Suave.io framework.</p>
-
-            <p>Finally, the newly created application will be deployed locally
-            using a custom nix expression and a systemd service to
-            manager/monitor it.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>11:15- 12:00</span>
-          <span><a href="#schedule-nixos-assimilate">NixOS Assimilate</a> by aszlig</span>
-          <div id="schedule-nixos-assimilate">
-
-            <p>A partitioner that allows for fully declatarive storage
-            specification and is thus able to turn the currently running system
-            into NixOS without losing data.</p>
-
-            <p>While this is generally useful even for non-NixOS distributions,
-            it's especially useful for bootstraping NixOS on various dedicated
-            server hosters and/or other situations where direct hardware access
-            is not available.</p>
-
-            <p>This talk describes the possible use cases of it and the
-            technical details about the implementation.</p>
-
-          </div>
-        </li>
-        <li>
-          <span>12:15- 13:00</span>
-          <span><a href="#schedule-nix-at-logicblox">Nix at LogicBlox</a> by Rob Vermaas</span>
-          <div id="schedule-nix-at-logicblox">
-
-            <p>In this talk, we will give an overview of the usage of Nix
-            within LogicBlox. For 4 years, we have used Nix to improve our
-            build, test and deployment infrastructure, and we are using NixOS
-            heavily in production. We would like to highlight why we feel Nix
-            is awesome and give some insight in how we are trying to give back
-            to the Nix community.</p>
-
-          </div>
-        </li>
-        <li style="margin-top: 15px">
-          <span>13:00 - 15:00</span>
-          <span>Lunch (provided)</span>
-        </li>
-        <li style="margin-top: 15px">
-          <span>15:00- 15:45</span>
-          <span><a href="#schedule-shipping-security-updates">Shipping Security Updates</a> by Nicolas Pierron</span>
-          <div id="schedule-shipping-security-updates">
-
-            <p>In the Internet era, we have to ship security updates in a matter
-            of hours.  The way we manage security updates today does not scale,
-            and it is bound by a critical path. In order to reduce, the
-            round-trip, we deliberately excluded most of the packages.</p>
-
-            <p>This presentation introduces a new way to handle security updates,
-            in a manner which can scale with the number of computer in the
-            buildfarm.  Thus delivering updates as fast as each project can
-            re-compile.</p>
-
-          </div>
-        <li>
-          <span>16:00 - 18:00</span>
-          <span><a href="#schedule-open-space">Unconference / Open space</a></span>
-          <div id="schedule-open-space">
-            <p>An unconference, also called OpenSpace conference is
-            a participant-driven meeting. The term "unconference" has been
-            applied, or self-applied, to a wide range of gatherings that try to
-            avoid one or more aspects of a conventional conference... 
-            <a href="https://en.wikipedia.org/wiki/Unconference">More</a></p>
-          </div>
-        </li>
-        <li>
-          <span>18:15 - 19:00</span>
-          <span><a href="#schedule-ignite-talks2">Lightning / Ignite talks</a></span>
-          <div id="schedule-ignite-talks2">
-            <p>A lightning talk is a very short presentation lasting only a few
-            minutes, given at a conference or similar forum. Several lightning
-            talks will usually be delivered by different speakers in a single
-            session, sometimes called a data blitz... 
-            <a href="https://en.wikipedia.org/wiki/Lightning_talk">More</a></p>
-          </div>
-        </li>
-      </ul>
-      <h3 id="sprinting">Day 3 (Extra) - Monday, 16. Nov 2015</h3>
-      <ul>
-        <li>
-          <span>10:00- 20:00</span>
-          <span><a href="#schedule-day3">Sprint day 1 (click for more)</a></span>
-          <div id="schedule-day3">
-            Location: <a href="http://osm.org/go/0MbE1P8Wg?m=&node=1552570835">RhodeCode GmbH, Wallstrasse 27, 10179 Berlin</a>
-            <br>
-            A Sprint is a focused development session lasting anywhere from
-            a day to a week, in which developers pair off together and focus on
-            a particular task which they choose themselves. 
-          </div>
-        </li>
-      </ul>
-
-      <h3>Day 4 (Extra) - Tuesday, 17. Nov 2015</h3>
-      <ul>
-        <li>
-          <span>10:00- 20:00</span>
-          <span><a href="#schedule-day4">Sprint day 2 (click for more)</a></span>
-          <div id="schedule-day4">
-            Location: <a href="http://osm.org/go/0MbE1P8Wg?m=&node=1552570835">RhodeCode GmbH, Wallstrasse 27, 10179 Berlin</a>
-            <br>
-            A Sprint is a focused development session lasting anywhere from
-            a day to a week, in which developers pair off together and focus on
-            a particular task which they choose themselves. 
-          </div>
-        </li>
-      </ul>
-
-    </div>
-
-	</section>
+	</section-->
 
 	<section id="sponsors">
 		<h2>Sponsors</h2>
     <div>
+		<p>We haven't contacted your company?!</p>
+        <p>Please consider sponsoring first NixOS conference.</p>
+        <a class="important" href="sponsorship-prospectus.html">
+            Become a Sponsor
+        </a>
+		</p-->
+    </div>
+    <!--div>
       <h3>Platinum</h3>
       <p>
         <a href="http://www.logicblox.com">
@@ -534,13 +111,7 @@ Vietnam Village -- Vietnamese (Oderberger Str. 7)
           <img src="rhodecode.png" alt="RhodeCode Inc." width="30%"/>
         </a>
       </p>
-    </div>
-		<!--p>We haven't contacted your company?!</p>
-        <p>Please consider sponsoring first NixOS conference.</p>
-        <a class="important" href="sponsorship-prospectus.html">
-            Become a Sponsor
-        </a>
-		</p-->
+    </div-->
 	</section>
 
 	<footer>
@@ -548,23 +119,18 @@ Vietnam Village -- Vietnamese (Oderberger Str. 7)
 			<ul>
 				<li><a href="mailto:conf@nixos.org">Contact</a></li>
 				<li><a href="terms-and-conditions.html">Terms and conditions</a></li>
-				<li><a href="http://berlincodeofconduct.org/">Code of conduct</a></li>
+				<li><a href="TODO">Code of conduct</a></li>
 			</ul>
 
       <div style="margin-top: 10px">
-      <a href="https://twitter.com/NixConBerlin" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @NixConBerlin</a>
+      <a href="https://twitter.com/NixCon2016" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @NixCon2016</a>
       </div>
 	</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-65901317-1', 'auto');
-		ga('send', 'pageview');
-  </script>
+    // ADD GOOGLE ANALYTICS
+    </script>
   <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   </script>
