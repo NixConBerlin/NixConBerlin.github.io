@@ -1,0 +1,296 @@
+/* Extra small devices (phones, less than 768px) */
+
+body {
+  color: #333;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+section {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1em;
+}
+
+section h2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #3A3A47;
+  text-transform: uppercase;
+}
+
+section h2:after {
+  content: "";
+  display: block;
+  margin: 8px 20px 0 20px;
+  border-bottom: 1px solid #E7E9EA;
+}
+
+section h3 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #3A3A47;
+  text-transform: uppercase;
+}
+
+section div.text {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #7D7DFC;
+ -moz-transition-property: all;
+ -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+ -moz-transition-duration: 0.2s;
+ -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: #3F3FBF;
+}
+
+a.important {
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+#heading a:after,
+a.important:after {
+  content: "";
+  display: block;
+  margin: 8px 8px 0 8px;
+  border-top: 1px solid #7D7DFC;
+ -moz-transition-property: all;
+ -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+ -moz-transition-duration: 0.2s;
+ -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+#heading a:hover:after,
+a.important:hover:after {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom-color: #3F3FBF;
+}
+
+
+#heading {
+  position: relative;
+  padding: 5em 0 0 0;
+  max-width: inherit;
+  line-height: 1.3em;
+  color: #9BA0A6;
+  background-color: #2D3038;
+  text-align: center;
+  min-height: 2em;
+}
+
+#heading header {
+  position: absolute;
+  top: 1.5em;
+  width: 100%;
+  text-align: left;
+}
+
+#heading header img {
+  width: 4em;
+  float: left;
+  margin-left: 1.5em;
+}
+
+#heading a {
+  font-size: 1.5em;
+  color: #FFF;
+  display: inline-block;
+}
+
+#heading .details a {
+  font-size: 1em;
+  border-bottom: 1px solid;
+}
+#heading .details a:after {
+  display: none;
+}
+
+#heading > a {
+  margin: 3em 0 4em 0;
+}
+
+#heading header a {
+  float: right;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+
+#heading h1,
+#heading h2 {
+  display: block;
+  max-width: 80%;
+  font-family: 'Architects Daughter', cursive;
+  color: #FFF;
+  padding: 0;
+  line-height: 1em;
+}
+
+#heading h1 {
+  margin: 1.5em auto 0 auto;
+  font-size: 5em;
+}
+
+#heading h2 {
+  margin: 0 auto 0.3em auto;
+  font-size: 3.5em;
+}
+#heading h2:after {
+  border: 0;
+}
+
+#heading p {
+  margin-bottom: 1em;
+}
+
+#heading .details {
+  padding: 1.5em 0;
+  background-color: #282A30;
+  line-height: 1.5em;
+}
+
+#heading .details span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.1em 1.5em;
+}
+
+#heading .details span:first-child {
+  color: #FFF;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #E7E9EA;
+  width: 90%;
+  margin: 4em auto 0 auto;
+  padding: 1em;
+}
+
+footer img {
+  width: 4em;
+  margin: 1em 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.indent {
+  margin-left: 1.5em;
+}
+
+#schedule > div > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#schedule > div > ul > li span {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#schedule > div > ul > li > div {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  background: #2D3038;
+  color: #FFF;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+#schedule > div > ul > li span:first-child {
+  font-weight: bold;
+  width: 15%;
+  min-width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
+#sponsorships {
+  border: 1px solid black;
+  margin-left: 1.5em;
+  width: 60%;
+  padding-left: 1.5em;
+  padding-right 1.5em;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#sponsorships thead,
+#sponsorships .level {
+  font-weight: bold;
+}
+
+#sponsorships .level {
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+#sponsorships .quantity {
+  text-align: center;
+}
+
+#sponsorships td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+#sponsors > div img {
+  vertical-align: middle;
+}
+#sponsors > div a {
+  margin: 0 1em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  margin: 0 1em;
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
